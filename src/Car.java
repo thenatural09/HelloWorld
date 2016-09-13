@@ -9,5 +9,4 @@ public class Car {
     String carColor;
     boolean ifCrashed;
     String[] modifications = new String[5];
-    Human owner;
 }
