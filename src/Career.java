@@ -7,4 +7,43 @@ public class Career {
     String companyName;
     int hoursWorkedPerWeek;
 
+    Career(String newJobTitle, String newCompanyTitle, int newHoursWorkedPerWeek) {
+        setJobTitle(newJobTitle);
+        setCompanyName(newCompanyTitle);
+        setHoursWorkedPerWeek(newHoursWorkedPerWeek);
+    }
+
+    String getJobTitle() {
+        return jobTitle;
+    }
+
+    void setJobTitle(String newJobTitle) {
+        if(isTheBoss(newJobTitle)) {
+            jobTitle = "He/She is a boss";
+        }
+        else {
+            jobTitle = newJobTitle;
+        }
+    }
+
+    String getCompanyName() {
+        return companyName;
+    }
+
+    void setCompanyName(String newCompanyName) {
+        companyName = newCompanyName;
+    }
+
+    int getHoursWorkedPerWeek() {
+        return hoursWorkedPerWeek;
+    }
+
+    void setHoursWorkedPerWeek(int newHoursWorkedPerWeek) {
+        hoursWorkedPerWeek = newHoursWorkedPerWeek;
+    }
+
+    static boolean isTheBoss(String jobTitle) {
+        return jobTitle.contains("CEO");
+    }
+
 }
