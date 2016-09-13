@@ -5,6 +5,19 @@ public class Person {
     String name;
     int age;
     boolean isAlive;
+
+    //static fields
+    static int minimumAge = 18;
+
+    //Constructors ---> can still add setter methods as shown
+    Person(String newName, int newAge, boolean newIsAlive) {
+        setName(newName);
+        setAge(newAge);
+        setIsAlive(newIsAlive);
+    }
+
+
+
  //starting with methods --> getting names
     String getName(){
         return name;
@@ -13,7 +26,7 @@ public class Person {
     //setting a field instead of getting
 
     void setName(String newName) {
-        if(newName.contains(" ")) {
+        if(isValidName(newName)) {
             name = newName;
         }
     }
@@ -23,7 +36,7 @@ public class Person {
     }
 
     void setAge(int newAge) {
-        if(newAge >= 18) {
+        if(newAge >= minimumAge) {
             age=newAge;
         }
 
@@ -40,6 +53,10 @@ public class Person {
         } else {
             isAlive = newIsAlive;
         }
+    }
+//making a method static so that it is stand alone without an object
+    static boolean isValidName(String name) {
+        return name.contains(" ");
     }
 
 }
