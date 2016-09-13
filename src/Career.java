@@ -6,7 +6,5 @@ public class Career {
     String jobTitle;
     String companyName;
     int hoursWorkedPerWeek;
-    Human personWithJob;
-    String [] whyWorkSucks = new String [5];
 
 }
