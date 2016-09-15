@@ -16,8 +16,6 @@ public class Person {
         setIsAlive(newIsAlive);
     }
 
-
-
  //starting with methods --> getting names
     String getName(){
         return name;
