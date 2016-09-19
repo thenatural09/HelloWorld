@@ -62,5 +62,12 @@ public class Main {
         String alice2 = (String) person.get("name");
         System.out.println(alice);
         System.out.println(alice2);
+
+        HashMap<String, Person> users = new HashMap<>();
+        Person p = new Person("Bob", 30, true);
+        users.put("bob", p);
+
+        Person p2  = users.get("bob");
+        System.out.println(p);
     }
 }

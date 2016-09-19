@@ -56,5 +56,4 @@ public class Person {
     static boolean isValidName(String name) {
         return name.contains(" ");
     }
-
 }
