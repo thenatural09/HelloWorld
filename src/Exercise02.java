@@ -38,6 +38,6 @@ public class Exercise02 {
             }
             emailMap.get(e.destination).add(e);
         }
-        System.out.println(emailMap);
+
     }
 }
