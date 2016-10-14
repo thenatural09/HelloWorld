@@ -1,0 +1,17 @@
+[
+  {
+    "age": 23,
+    "isAlive": true,
+    "name": "Troy Ward"
+  },
+  {
+    "age": 23,
+    "isAlive": true,
+    "name": "Alice Smith"
+  },
+  {
+    "age": 23,
+    "isAlive": true,
+    "name": "Bob Jones"
+  }
+]
